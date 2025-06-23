@@ -18,7 +18,7 @@ avg_cal <- fastfood |> # GROUPING BY RESTAURANT TO GET AVG CALS
 mean(fastfood$calories, na.rm = TRUE) # MEAN CALORIES
 sd(fastfood$total_fat, na.rm = TRUE) # STD DEV OF TOTAL FAT
 unique(fastfood$restaurant)
-# ONE-TAILEED T-TEST
+# ONE-TAILED T-TEST
 # H0: No difference in mean calories between McDonald's and Burger King
 # H1: McDonald's meals have higher calories on average than Burger King
 mcd <- filter(fastfood, restaurant == "Mcdonalds")
